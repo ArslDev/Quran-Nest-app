@@ -27,7 +27,7 @@ class _home_screenState extends State<home_screen> {
           
           child: ListTile(
             onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context) => Surahlist(indexSurah: 12)));
+              Navigator.push(context, MaterialPageRoute(builder: (context) => Surahlist(indexSurah: index +1)));
             },
             title: Text('${quran.getSurahNameEnglish(index+1)}'),
             subtitle: Text('${quran.getSurahNameArabic(index+1)}') ,
