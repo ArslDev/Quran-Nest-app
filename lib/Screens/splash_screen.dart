@@ -2,6 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:lottie/lottie.dart';
 import 'package:quran_nest/Screens/home-screen.dart';
 
 class splash_screen extends StatefulWidget {
@@ -19,7 +20,7 @@ class _splash_screenState extends State<splash_screen> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    Timer(Duration(seconds: 3), (){
+    Timer(Duration(seconds: 5), (){
       Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=> home_screen()));
     });
   }
@@ -32,7 +33,7 @@ class _splash_screenState extends State<splash_screen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/quran.png', height: 200, width: 200,),
+              LottieBuilder.asset('assets/Animation - 1741861143867.json', height: 200, width: 200,),
               Text('Quran Nest', style: GoogleFonts.luckiestGuy(color: Colors.white,fontSize: 30) ,),
             ],
           ),
